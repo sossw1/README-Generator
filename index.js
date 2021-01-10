@@ -8,7 +8,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const questions = [
     {
         type: 'input',
-        name: 'projectTitle',
+        name: 'title',
         message: 'What is the title of this project?',
     },
     {
@@ -18,7 +18,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'instructions',
+        name: 'installation',
         message: 'How would a new user install this project?',
     },
     {
@@ -77,8 +77,8 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 const init = async function() {
     const answers = await promptUser(questions);
-    const licenseBadge = generateMarkdown.renderLicenseBadge(license);
-    const licenseLink = generateMarkdown.renderLicenseLink(license);
+    const markdown = await generateMarkdown(answers);
+    
 }
 
 // Function call to initialize app
