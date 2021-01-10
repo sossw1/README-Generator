@@ -43,7 +43,7 @@ const questions = [
         choices: [
             'Apache 2.0',
             'BSD 2-Clause',
-            'BSC 3-Clause',
+            'BSD 3-Clause',
             'Eclipse 1.0',
             'GPL v2',
             'GPL v3',
