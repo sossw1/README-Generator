@@ -52,11 +52,21 @@ const questions = [
     }
 ];
 
+// Function to prompt user for input
+function promptUser(questions) {
+    return inquirer.prompt(questions);
+}
+
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+const init = async function() {
+    const answers = await promptUser(questions);
+    
+}
 
 // Function call to initialize app
 init();
