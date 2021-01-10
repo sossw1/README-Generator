@@ -77,7 +77,8 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 const init = async function() {
     const answers = await promptUser(questions);
-
+    const licenseBadge = generateMarkdown.renderLicenseBadge(license);
+    const licenseLink = generateMarkdown.renderLicenseLink(license);
 }
 
 // Function call to initialize app
