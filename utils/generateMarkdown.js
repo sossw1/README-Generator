@@ -65,20 +65,35 @@ function generateMarkdown(data) {
   const licenseSection = renderLicenseSection(data.license);
 
   return `# ${data.title}
-INSERT BADGES HERE
+
+## Table of Contents
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
+
 ## Description
 ${data.description}
-## Table of Contents
+
 ## Installation
 ${data.installation}
+
 ## Usage
 ${data.usage}
+
 ## License
+
 ## Contributing
 ${data.contribution}
+
 ## Tests
 ${data.testing}
+
 ## Questions
+
 `;
 }
 
