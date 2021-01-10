@@ -75,6 +75,8 @@ function generateMarkdown(data) {
   * [Tests](#tests)
   * [Questions](#questions)
 
+[![License](${licenseBadge})](${licenseLink})
+
 ## Description
 ${data.description}
 
@@ -85,6 +87,7 @@ ${data.installation}
 ${data.usage}
 
 ## License
+${licenseSection}
 
 ## Contributing
 ${data.contribution}
