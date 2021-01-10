@@ -2,6 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -36,9 +37,20 @@ const questions = [
         message: 'How can other developers test this project?',
     },
     {
-        type: 'input',
+        type: 'rawlist',
         name: 'license',
         message: 'Which license applies to this project?',
+        choices: [
+            'Apache 2.0',
+            'BSD 2-Clause',
+            'BSC 3-Clause',
+            'Eclipse 1.0',
+            'GPL v2',
+            'GPL v3',
+            'LGPL v3',
+            'MIT',
+            'none'
+        ]
     },
     {
         type: 'input',
@@ -65,7 +77,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 const init = async function() {
     const answers = await promptUser(questions);
-    
+
 }
 
 // Function call to initialize app
