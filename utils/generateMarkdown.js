@@ -96,7 +96,11 @@ ${data.contribution}
 ${data.testing}
 
 ## Questions
+Please reach out to me with any questions!
 
+Email: ${data.email}
+
+GitHub: [${data.github}](http://github.com/${data.github})
 `;
 }
 
